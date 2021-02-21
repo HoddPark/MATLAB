@@ -11,8 +11,8 @@ Fdetector = vision.CascadeObjectDetector;
 Face = step(Fdetector,img);
 imgFace = (img(Face(1,2):Face(1,2)+Face(1,4),Face(1,1):Face(1,1)+Face(1,3),:));
 
-
-
 re_img = imresize(imgFace,[224 224]);
 figure
 imshow(re_img)
+
+%%
