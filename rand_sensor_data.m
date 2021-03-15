@@ -6,8 +6,10 @@ for i = 1:1:10
 end
 %temp = 10*rand(10,1) + temp;
 R = getR(temp);
+
 temp_dist = getR_dist(temp,0.1) + rand([10 10]);
 R_dist = getR_dist(R,0.1) + rand([10 10]);
+
 
 figure
 hold on
